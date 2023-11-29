@@ -1,0 +1,40 @@
+<div class="main">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="content">
+        <h1 class="text-icon">
+          <span style="color: blue">F</span>
+          <span style="color: red">u</span>
+          <span style="color: yellow">n</span>
+          <span style="color: rgb(15, 15, 15)">-</span>
+          <span style="color: blue">d</span>
+          <span style="color: green">o</span>
+        </h1>
+        <h2 class="sub-heading">Log in</h2>
+        <p class="Email">
+          <mat-form-field appearance="outline" class="Email">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error>Enter valid Email</mat-error>
+          </mat-form-field>
+        </p>
+        <p class="Password">
+          <mat-form-field appearance="outline" class="Password">
+            <mat-label>Password</mat-label>
+            <input [type]="showPassword? 'text' : 'password'" matInput placeholder="Password"
+              formControlName="password">
+            <mat-error>Enter Password Correctly</mat-error>
+          </mat-form-field>
+          <a mat-button href="forgetpassword" color="primary">Forget Password</a>
+        </p>
+        <div class="example-section show">
+          <mat-checkbox class="example-margin" (change)="togglePasswordVisibility()">Show Password</mat-checkbox>
+        </div>
+        <div class="signin">
+          <a mat-button href="register" color="primary">Create Account</a>
+          <button mat-raised-button color="primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

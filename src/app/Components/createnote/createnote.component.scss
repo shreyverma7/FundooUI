@@ -1,0 +1,60 @@
+
+.main {
+  border: 1px solid rgb(223, 214, 214);
+  width: 500px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 350px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.innerup {
+  display: flex;
+}
+
+.innerbelow {
+  background-color: white;
+}
+
+.fullWidthTextArea {
+  resize: none;
+  overflow: hidden;
+}
+
+.above {
+  font-family: 'Courier New', Courier, monospace;
+  width: 330px;
+  border: 0px;
+  height: 45px;
+  padding: 0px;
+  outline: none;
+}
+
+.belowt {
+  font-family: 'Courier New', Courier, monospace;
+  width: 420px;
+  border: 0px;
+  height: 45px;
+  padding: 0px;
+  outline: none;
+  margin-left: 15px;
+  font-size: 15px
+}
+
+.belowd {
+  font-family: 'Courier New', Courier, monospace;
+  width: 450px;
+  border: 0px;
+  height: 45px;
+  padding: 0px;
+  outline: none;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.close {
+  margin-top: 10px;
+  margin-left: 30px;
+}

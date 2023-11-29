@@ -1,0 +1,20 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 18
+}
+
+.palette-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}

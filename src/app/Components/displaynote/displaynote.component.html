@@ -1,0 +1,29 @@
+<div class="main">
+  <div
+    class="content"
+    *ngFor="let note of notelistarray | search : searchText"
+    [style.background-color]="note.color ? note.color : 'white'"
+  >
+    <div class="noteid" (click)="openDialog(note, note.noteId)">{{ note.title }}</div>
+    <div class="notedes"> {{ note.description }}</div>
+    <div class="icon-space">
+      <app-icon  [noteid]="note.noteId"></app-icon>
+      <button
+        mat-icon-button
+        class="icon"
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <span class="material-symbols-outlined icons"> more_vert </span>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="delete(note.noteId)">
+          <span>Delete</span>
+        </button>
+        <button mat-menu-item><span>Add Label</span></button>
+        <button mat-menu-item><span>Add Drawing</span></button>
+        <button mat-menu-item><span>Make a Copy</span></button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

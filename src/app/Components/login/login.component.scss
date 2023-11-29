@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+}
+.text-icon{
+  font-family: serif;
+  font-size: 35px;
+}
+.sub-heading{
+  font-weight: 300;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom:5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid grey;
+  width: 300px;
+  height: 400px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Email,
+.Password,
+.header,
+.show {
+  width: 100%;
+}
+
+.signin {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

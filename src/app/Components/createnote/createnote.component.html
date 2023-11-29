@@ -1,0 +1,66 @@
+<div class="main">
+    <div *ngIf="!fullView" (click)="openFullView()" class="innerup">
+        <div>
+            <input type="text-Top" placeholder="   Take A Note" class="above">
+        </div>
+        <div *ngIf="!fullView">
+            <div class="icon-container">
+                <button mat-icon-button class="icon">
+                    <span class="material-symbols-outlined">
+                        check_box
+                    </span>
+                </button>
+                <button mat-icon-button class="icon">
+                    <span class="material-symbols-outlined">
+                        brush
+                    </span>
+                </button>
+                <button mat-icon-button class="icon">
+                    <span class="material-symbols-outlined">
+                        image
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="fullView" class="innerbelow">
+        <div>
+            <div>
+                <input type="text" placeholder="Title" [(ngModel)]="title" class="belowt">
+                <button mat-icon-button class="push_pin">
+                    <span class="material-symbols-outlined">
+                        push_pin
+                    </span>
+                </button>
+            </div>
+            <textarea type="text" placeholder="description" id="descriptionTextArea" (input)="expandTextarea()"
+                [(ngModel)]="description" class="belowd"></textarea>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <app-icon />
+            <button mat-icon-button class="icon" [matMenuTriggerFor]="menu"
+                aria-label="Example icon-button with a menu">
+                <span class="material-symbols-outlined icons">
+                    more_vert
+                </span>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item><span>Add Label</span></button>
+                <button mat-menu-item><span>Add Drawing</span></button>
+                <button mat-menu-item><span>Show Tick Boxes</span></button>
+            </mat-menu>
+
+            <button mat-icon-button class="icon">
+                <span class="material-symbols-outlined">
+                    undo
+                </span>
+            </button>
+            <button mat-icon-button class="icon">
+                <span class="material-symbols-outlined">
+                    redo
+                </span>
+            </button>
+            <button mat-button (click)="minimizeView()" class="close">close</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+.description-area{
+  padding-bottom: 50px;
+  background-color: red;
+}
+.main {
+    width: 450px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titlearea{
+    width: 330px;
+    border: 0px;
+    height: 45px;
+    outline: none;
+    margin-left: 15px;
+    font-size: 22px;
+
+
+  }
+
+.descarea{
+    width: 400px;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    margin-left: 15px;
+    font-size: 15px;
+    padding-bottom: 90px;
+}
+
+.iconbar-space{
+    height: 50px;
+}
+
+.iconbar{
+    display: flex;
+    flex-direction: row;
+}

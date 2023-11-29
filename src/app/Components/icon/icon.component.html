@@ -1,0 +1,33 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<div class="bottomicons">
+    <button mat-icon-button class="icon">
+        <span class="material-symbols-outlined icons">
+            add_alert
+        </span>
+    </button>
+    <button mat-icon-button class="icon">
+        <span class="material-symbols-outlined icons">
+            person_add
+        </span>
+    </button>
+    <button mat-icon-button (click)="togglePalette()">
+        <span class="material-symbols-outlined icons">
+            palette
+        </span>
+    </button>
+    <button mat-icon-button class="icon">
+        <span class="material-symbols-outlined icons">
+            image
+        </span>
+    </button>
+    <button mat-icon-button class="icon" (click)="Archive()">
+        <span class="material-symbols-outlined icons">
+            archive
+        </span>
+    </button>
+    <div *ngIf="showPalette" class="palette-container">
+        <div class="color-circle" *ngFor="let color of colors" (click)="selectColor(color)"
+            [style.background-color]="color"></div>
+    </div>
+</div>

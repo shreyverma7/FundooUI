@@ -1,0 +1,98 @@
+.text-icon{
+  font-family: serif;
+  font-size: 35px;
+}
+.sidenav{
+  border: none;
+  width: 20%;
+  height: 100%;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.material-symbols-outlined{
+  width: 20%;
+  height: 100%;
+font-variation-settings:
+'FILL' 0
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+  background-color: white;
+}
+
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 2;
+  background-color: white;
+
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.Search {
+  padding-left: 100px;
+  padding-top: 22px;
+  width: 600px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icons {
+  padding-left: 70px;
+}
+.menubutton{
+  padding-right: 20px;
+  background-color: aqua;
+}
+.main {
+  background-color: white;
+  width: 1000px;
+  // margin-left: 75px;
+}
+
+.active-color {
+  background-color: rgb(190, 190, 165)
+}
+
+.icon {
+  font-size: 19px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.container1 {
+  margin-left: 20px;
+}
+
+.container2 {
+  margin-left: 40px;
+}
+
+.border {
+  border-radius: 0px 25px 25px 0px;
+  display:flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,15 @@
+<app-createnote></app-createnote>
+<div class="main">
+
+    <div class="deletenote" *ngFor="let note of notelistarray">
+        <div class="noteid">{{note.title}}</div>
+        <div class="notedes">{{note.description}}</div>
+        <button mat-icon-button class="button1" (click)="delete(note.noteId)">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-icon-button class="button1" (click)="restore(note.noteId)">
+            <mat-icon>restore_from_trash</mat-icon>
+        </button>
+
+    </div>
+</div>

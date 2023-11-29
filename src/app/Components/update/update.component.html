@@ -1,0 +1,24 @@
+<div class="main">
+  <div>
+    <input type="text" placeholder="Title" [(ngModel)]="title" class="titlearea" />
+    <button mat-icon-button>
+      <mat-icon>push_pin</mat-icon>
+    </button>
+  </div>
+  <textarea class="description-area"
+    type="text"
+    placeholder="description"
+    id="descriptionTextArea"
+    (input)="expandTextarea()"
+    [(ngModel)]="description"
+    class="descarea"
+  ></textarea>
+  <div class="iconbar-space">
+    <div class="iconbar">
+      <app-icon (messageEvent)="receiveColor($event)"></app-icon>
+      <button mat-button (click)="minimizeView()" style="margin-top: 7px">
+        Save
+      </button>
+    </div>
+  </div>
+</div>
